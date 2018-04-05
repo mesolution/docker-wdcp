@@ -8,8 +8,9 @@ RUN yum install -y wget \
     && sed -i 's/read -p "Please Input 1,2,3,4,5: " SERVER_ID/SERVER_ID=4/g' lanmp.sh \
     && chmod +x /start.sh \
     && sh lanmp.sh
- RUN wget http://down.wdlinux.cn/in/phps.sh \
-    && phps.sh 7.1.4 \
+    && sh lib/phps.sh 7.1.4 \
+    && sh lib/phps.sh 5.6.30 \
+    && sh lib/phps.sh 7.0.18 \
 
 EXPOSE 21 80 443 3306 8080 20000-20500
 
