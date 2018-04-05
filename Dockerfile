@@ -6,7 +6,6 @@ RUN yum install -y wget \
     && wget http://dl.wdlinux.cn/lanmp_laster.tar.gz \
     && tar zxvf lanmp_laster.tar.gz \
     && sh lanmp.sh cus \
-    && sh lib/phps.sh \
     && sh lib/phps.sh 5.6.30 \
     && sh lib/phps.sh 7.0.18 \
     && sh lib/phps.sh 7.1.4 \
