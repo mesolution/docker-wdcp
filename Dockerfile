@@ -9,7 +9,7 @@ RUN yum install -y wget \
     && chmod +x /start.sh \
     && sh lanmp.sh
  RUN wget http://down.wdlinux.cn/in/phps.sh \
-    && sh phps.sh \
+    && phps.sh 7.1.4 \
 
 EXPOSE 21 80 443 3306 8080 20000-20500
 
