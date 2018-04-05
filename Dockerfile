@@ -7,7 +7,7 @@ RUN yum install -y wget \
     && tar zxvf lanmp_laster.tar.gz \
     && sed -i 's/read -p "Please Input 1,2,3,4,5: " SERVER_ID/SERVER_ID=4/g' lanmp.sh \
     && chmod +x /start.sh \
-    && sh lanmp.sh \
+    && sh lanmp.sh cus \
     && sh lib/phps.sh \
     && sh lib/phps.sh 5.6.30 \
     && sh lib/phps.sh 7.0.18 \
