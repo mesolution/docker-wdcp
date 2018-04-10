@@ -9,9 +9,6 @@ RUN yum install -y wget \
     && sh lanmp.sh cus \
     && sh lib/apache.sh \
     && sh lib/phps.sh \
-    && sh lib/phps.sh 5.6.30 \
-    && sh lib/phps.sh 7.0.18 \
-    && sh lib/phps.sh 7.1.4 \
     && sh lib/phps_zend.sh \
     && sh lib/phps_redis.sh \
     && sh lib/phps_memcache.sh \
