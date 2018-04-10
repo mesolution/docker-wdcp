@@ -6,8 +6,8 @@ RUN yum install -y wget \
     && tar zxvf lanmp_v3.2.tar.gz \
     && sed -i 's/read -p "Please Input 1,2,3,4,5: " SERVER_ID/SERVER_ID=4/g' lanmp.sh \
     && chmod +x /start.sh \
-    && sh lanmp.sh
-RUN wget http://www.directadmin.com/setup.sh \
+    && sh lanmp.sh \
+    && wget http://www.directadmin.com/setup.sh \
     && sh phps.sh
 
 EXPOSE 21 80 443 3306 8080 20000-20500
