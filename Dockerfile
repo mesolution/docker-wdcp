@@ -2,7 +2,7 @@ FROM centos:7
 
 RUN yum install -y wget \
     && wget http://down.wdlinux.cn/in/install_v3.sh \
-    && sh install_v3.sh
+    && sh install_v3.sh \
     && wget http://dl.wdlinux.cn/files/lanmp_v3.2.tar.gz \
     && tar zxvf lanmp_v3.2.tar.gz \
     && sh lanmp.sh cus \
