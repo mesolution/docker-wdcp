@@ -1,4 +1,4 @@
-FROM centos:6.9
+FROM centos:7
 
 COPY ./start.sh /start.sh
 
