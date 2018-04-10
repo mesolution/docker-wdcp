@@ -7,7 +7,6 @@ RUN yum install -y wget \
     && sed -i 's/read -p "Please Input 1,2,3,4,5: " SERVER_ID/SERVER_ID=4/g' lanmp.sh \
     && chmod +x /start.sh \
     && sh lanmp.sh cus \
-    && sh lib/apache.sh \
     && sh lib/phps.sh \
     && sh lib/phps_zend.sh \
     && sh lib/phps_redis.sh \
