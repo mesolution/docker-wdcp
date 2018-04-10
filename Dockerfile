@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:6.9
 COPY ./start.sh /start.sh
 
 RUN yum install -y wget \
